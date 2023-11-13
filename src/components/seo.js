@@ -38,6 +38,32 @@ function Seo({ description, title, children }) {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
       {children}
+      <script type="application/ld+json">
+      {`
+        {
+            "@context": "http://schema.org",
+            "@type": "ProfessionalService",
+            "name": "Your Agency Name",
+            "description": "Expert web development services tailored for the fish industry.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "123 Sea Street",
+                "addressLocality": "Ocean City",
+                "addressRegion": "OC",
+                "postalCode": "12345",
+                "addressCountry": "USA"
+            },
+            "telephone": "+1234567890",
+            "url": "http://www.youragencywebsite.com",
+            "logo": "http://www.youragencywebsite.com/images/logo.png",
+            "image": "http://www.youragencywebsite.com/images/hero-bg.jpg",
+            "sameAs": [
+                "http://www.facebook.com/youragency",
+                "http://www.twitter.com/youragency",
+                "http://www.linkedin.com/company/youragency"
+            ]
+        `}
+        </script>
     </>
   )
 }
