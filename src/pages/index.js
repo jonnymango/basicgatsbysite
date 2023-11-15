@@ -5,7 +5,6 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import goldfish from "../images/goldfish.jpeg"
 
-console.log(goldfish)
 
 const IndexPage = () => (
   <Layout>
